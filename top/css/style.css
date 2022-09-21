@@ -550,7 +550,7 @@ _:-ms-lang(x)::-ms-backdrop,
 }
 
 .d-demo__item {
-  width: calc(100vw /4);
+  width: calc(100vw /3);
   font-size: 2.5rem;
 }
 

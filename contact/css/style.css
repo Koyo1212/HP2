@@ -354,6 +354,7 @@ font-size: 3rem;
   text-indent: 1em;
   border-radius: 0.5em;
   background: rgb(255, 255, 255);
+ 
 }
 
 .cp_qa .cp_actab label::before {
@@ -393,8 +394,9 @@ font-size: 3rem;
   max-height: 0;
   padding: 0 0 0 2.5em;
   -webkit-transition: max-height 0.2s;
-  transition: max-height 0.2s;
+  transition: max-height 0.2s; 
   border-radius: 0 0 0.5em 0.5em;
+  transition: 0.9s;
 }
 
 .cp_qa .cp_actab .cp_actab-content::before {
@@ -452,23 +454,32 @@ font-size: 3rem;
 }
 
 .contact-wrapper__form {
-  margin-bottom: 4%;
+  display: block;
+  text-align: center;
+width: 80%;
+
+margin: 0 0 4% 15% ;
+
+
 }
 
 .lavel {
-  float: left;
-  width: 20%;
+  display: inline-block;
+  text-align: left;
+float: left;
+  width: 15%;
   font-size: 2rem;
-  margin-left: 25%;
-  margin-right: 5%;
+ 
+
 }
 
 .inputs {
   background-color: #EAEAEA;
   border: none;
   font-size: large;
-  width: 40%;
+  width: 50%;
   padding: 1% 1%;
+  
 }
 
 .contact-button__box {
