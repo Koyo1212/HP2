@@ -55,6 +55,7 @@ body {
 
 .header-wrapper__left__image {
   width: 75%;
+  position: relative;
 }
 
 .header-wrapper__left__image img {
@@ -63,6 +64,89 @@ body {
   overflow: hidden;
   object-fit: cover;
   object-position: 0% 0%;
+
+}
+
+.header-wrapper__left__image p {
+  position: absolute;
+  top: 3.3%;
+  left: 11.9%;
+  font-size: 6.6rem;
+  writing-mode: vertical-rl;
+  font-family: 'Noto Serif', serif;
+  line-height: 1.2;
+}
+
+@media screen and (max-width:1150px) {
+  .header-wrapper__left__image p {
+    position: absolute;
+    top: 3.3%;
+    left: 11.9%;
+    font-size: 7.6rem;
+    writing-mode: vertical-rl;
+    font-family: 'Noto Serif', serif;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width:1020px) {
+  .header-wrapper__left__image p {
+    position: absolute;
+    top: 3.3%;
+    left: 11.9%;
+    font-size: 8.6rem;
+    writing-mode: vertical-rl;
+    font-family: 'Noto Serif', serif;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width:910px) {
+  .header-wrapper__left__image p {
+    position: absolute;
+    top: 3.3%;
+    left: 11.9%;
+    font-size: 9.6rem;
+    writing-mode: vertical-rl;
+    font-family: 'Noto Serif', serif;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .header-wrapper__left__image p {
+    position: absolute;
+    top: 3.3%;
+    left: 11.9%;
+    font-size: 10.6rem;
+    writing-mode: vertical-rl;
+    font-family: 'Noto Serif', serif;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width:690px) {
+  .header-wrapper__left__image p {
+    position: absolute;
+    top: 3.3%;
+    left: 11.9%;
+    font-size: 11.6rem;
+    writing-mode: vertical-rl;
+    font-family: 'Noto Serif', serif;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width:580px) {
+  .header-wrapper__left__image p {
+    position: absolute;
+    top: 3.3%;
+    left: 9%;
+    font-size: 10.6rem;
+    writing-mode: vertical-rl;
+    font-family: 'Noto Serif', serif;
+    line-height: 1.2;
+  }
 }
 
 .header-wrapper__right__nav__logo {
@@ -247,6 +331,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
+    z-index: 1;
   }
 
   .sp-logo img {
@@ -347,12 +432,12 @@ body {
 }
 
 @media screen and (max-width:431px) {
-  
+
   .news-wrapper__txt {
     width: 70%;
     text-align: center;
     margin: 0 auto;
-    border: solid #fff 2px; 
+    border: solid #fff 2px;
 
   }
 }
@@ -367,15 +452,17 @@ body {
 }
 
 .about-wrapper {
+  width: 100%;
   display: flex;
   align-items: center;
-  margin-bottom: 5%;
+  margin-bottom: 7%;
+  margin-top: 7%;
 }
 
 
 .about-wrapper__left {
-  margin-top: 10%;
-  width: 45%;
+
+  width: 50%;
 }
 
 .about-wrapper__left img {
@@ -384,7 +471,7 @@ body {
 
 .about-wrapper__right {
   width: 50%;
-  margin-top: 10%;
+
   text-align: center;
   font-size: 3rem;
 }
@@ -466,7 +553,8 @@ body {
 }
 
 .about-wrapper__txt {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
   display: block;
 
@@ -487,7 +575,7 @@ body {
 .about-wrapper__button a {
   border: solid #fff 2px;
   border-radius: 50px;
-  padding: 0.7% 4%;
+  padding: 1% 4%;
   color: #fff;
   text-decoration: none;
   font-size: 1.8rem;
@@ -596,30 +684,35 @@ _:-ms-lang(x)::-ms-backdrop,
   font-size: 2rem;
 }
 
+
 .footer-wrapper {
   width: 100%;
 
 }
 
-.footer-wrapper__top {
-  width: 100%;
-  text-align: center;
+
+
+.tryangle-box{
+  line-height: 0;
+ text-align: center;
 }
 
-.footer-wrapper__top a:hover {
-  opacity: 0.5;
+.tryangle-box a{
+  font-size: 9rem;
+  text-decoration: none;
+  color: #1C1C1C;
+width: max-content;
+
 }
 
-.footer-wrapper__top img {
-  width: 8%;
-  vertical-align: top;
-}
+
 
 .footer-wrapper__list {
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: #1C1C1C;
+  z-index: 1;
 }
 
 .footer-wrapper__list__left {
@@ -741,12 +834,12 @@ _:-ms-lang(x)::-ms-backdrop,
     font-size: 3rem;
   }
 
-    .header-wrapper__right__nev__list__tell p {
-      font-size: 2rem;
-      border: solid #fff 1px;
-      padding: 3% 3%;
-      margin: 0 20%;
-    }
+  .header-wrapper__right__nev__list__tell p {
+    font-size: 2rem;
+    border: solid #fff 1px;
+    padding: 3% 3%;
+    margin: 0 20%;
+  }
 }
 
 @media screen and (max-width:1020px) {
@@ -754,37 +847,40 @@ _:-ms-lang(x)::-ms-backdrop,
 
     font-size: 3.5rem;
   }
-    .header-wrapper__right__nev__list__tell p {
-      font-size: 2.5rem;
-      border: solid #fff 1px;
-      padding: 3% 3%;
-      margin: 0 20%;
-    }
+
+  .header-wrapper__right__nev__list__tell p {
+    font-size: 2.5rem;
+    border: solid #fff 1px;
+    padding: 3% 3%;
+    margin: 0 20%;
+  }
 
 }
 
 @media screen and (max-width:910px) {
   .header-wrapper__right__nev__list a {
-    font-size:4rem;
+    font-size: 4rem;
   }
-.header-wrapper__right__nev__list__tell p {
-  font-size: 2.5rem;
-  border: solid #fff 1px;
-  padding: 3% 3%;
-  margin: 0 20%;
-}
+
+  .header-wrapper__right__nev__list__tell p {
+    font-size: 2.5rem;
+    border: solid #fff 1px;
+    padding: 3% 3%;
+    margin: 0 20%;
+  }
 }
 
 @media screen and (max-width:800px) {
   .header-wrapper__right__nev__list a {
     font-size: 4.8rem;
   }
-    .header-wrapper__right__nev__list__tell p {
-      font-size: 3rem;
-      border: solid #fff 1px;
-      padding: 3% 3%;
-      margin: 0 20%;
-    }
+
+  .header-wrapper__right__nev__list__tell p {
+    font-size: 3rem;
+    border: solid #fff 1px;
+    padding: 3% 3%;
+    margin: 0 20%;
+  }
 }
 
 
@@ -792,22 +888,24 @@ _:-ms-lang(x)::-ms-backdrop,
   .header-wrapper__right__nev__list a {
     font-size: 5.8rem;
   }
-    .header-wrapper__right__nev__list__tell p {
-      font-size: 3rem;
-      border: solid #fff 1px;
-      padding: 3% 3%;
-      margin: 0 20%;
-    }
+
+  .header-wrapper__right__nev__list__tell p {
+    font-size: 3rem;
+    border: solid #fff 1px;
+    padding: 3% 3%;
+    margin: 0 20%;
+  }
 }
 
 @media screen and (max-width:580px) {
   .header-wrapper__right__nev__list a {
     font-size: 7rem;
   }
-    .header-wrapper__right__nev__list__tell p {
-      font-size:4rem;
-      border: solid #fff 1px;
-      padding: 3% 3%;
-      margin: 0 20%;
-    }
+
+  .header-wrapper__right__nev__list__tell p {
+    font-size: 4rem;
+    border: solid #fff 1px;
+    padding: 3% 3%;
+    margin: 0 20%;
+  }
 }
