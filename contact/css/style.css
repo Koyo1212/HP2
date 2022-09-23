@@ -42,7 +42,7 @@ html {
 }
 
 body {
-background-color: #000;
+
   color: #fff;
   box-sizing: border-box;
 }
@@ -63,15 +63,17 @@ background-color: #000;
   height: 100vh;
   overflow: hidden;
   object-fit: cover;
-  object-position: 0% 0%;
+  object-position: 45% 0%;
 
 }
 
 .header-wrapper__left__image p {
   position: absolute;
   top: 3.3%;
-  left: 11.9%;
+  left: 3%;
+  font-weight: 400;
   font-size: 6.6rem;
+  color: #000;
   writing-mode: vertical-rl;
   font-family: 'Noto Serif', serif;
   line-height: 1.2;
@@ -81,7 +83,7 @@ background-color: #000;
   .header-wrapper__left__image p {
     position: absolute;
     top: 3.3%;
-    left: 11.9%;
+    left: 3%;
     font-size: 7.6rem;
     writing-mode: vertical-rl;
     font-family: 'Noto Serif', serif;
@@ -93,7 +95,7 @@ background-color: #000;
   .header-wrapper__left__image p {
     position: absolute;
     top: 3.3%;
-    left: 11.9%;
+    left: 3%;
     font-size: 8.6rem;
     writing-mode: vertical-rl;
     font-family: 'Noto Serif', serif;
@@ -105,7 +107,7 @@ background-color: #000;
   .header-wrapper__left__image p {
     position: absolute;
     top: 3.3%;
-    left: 11.9%;
+    left: 3%;
     font-size: 9.6rem;
     writing-mode: vertical-rl;
     font-family: 'Noto Serif', serif;
@@ -117,7 +119,7 @@ background-color: #000;
   .header-wrapper__left__image p {
     position: absolute;
     top: 3.3%;
-    left: 11.9%;
+    left:3%;
     font-size: 10.6rem;
     writing-mode: vertical-rl;
     font-family: 'Noto Serif', serif;
@@ -129,37 +131,36 @@ background-color: #000;
   .header-wrapper__left__image p {
     position: absolute;
     top: 3.3%;
-    left: 11.9%;
+    left: 3%;
     font-size: 11.6rem;
     writing-mode: vertical-rl;
     font-family: 'Noto Serif', serif;
     line-height: 1.2;
   }
 }
-  @media screen and (max-width:580px) {
-    .header-wrapper__left__image p {
-      position: absolute;
-      top: 3.3%;
-      left: 9%;
-      font-size: 10.6rem;
-      writing-mode: vertical-rl;
-      font-family: 'Noto Serif', serif;
-      line-height: 1.2;
-    }
+
+@media screen and (max-width:580px) {
+  .header-wrapper__left__image p {
+    position: absolute;
+    top: 3.3%;
+    left: 3%;
+    font-size: 10.6rem;
+    writing-mode: vertical-rl;
+    font-family: 'Noto Serif', serif;
+    line-height: 1.2;
   }
+}
 
-  .header-wrapper__right__nav__logo {
-    width: 100%;
-    text-align: center;
-    margin-top: 15%;
+.header-wrapper__right__nav__logo {
+  width: 100%;
+  text-align: center;
+  margin-top: 15%;
 
-  }
+}
 
-  .header-wrapper__right__nav__logo img {
-    width: 37%;
-  }
-
-
+.header-wrapper__right__nav__logo img {
+  width: 37%;
+}
 
 
 .sp-logo {
@@ -365,7 +366,7 @@ background-color: #000;
     background-color: #000;
     width: 100%;
     height: 100vh;
-    object-position: 25% 0%;
+    object-position: 55% 0%;
 
   }
 
@@ -386,14 +387,15 @@ background-color: #000;
 
 }
 
+
 main{
   background-color: #000;
 }
 
 .question-wrapper{
   background-color: #1C1C1C;
-  padding: 5% 0 10% 0;
-  margin: 10% 0 10% 0;
+  padding: 15% 0 10% 0;
+  margin: 0 0 10% 0;
 }
 
 .question-wrapper__ttl{
@@ -671,6 +673,93 @@ border:solid #fff 2px;
 
 .footer-wrapper {
   width: 100%;
+}
+.tryangle-box{
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+}
+
+
+
+.tryangle{
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+
+}
+.tryangle:hover{
+  opacity: 0.5;
+  
+  }
+  
+.tryangle::before{
+content: "";
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 30px 30px 45px  30px;
+
+border-color: transparent  transparent #333 transparent;
+position: absolute;
+top: -35px;
+left: 0;
+transform: translate(-50%, -50%);
+}
+
+.tryangle::after{
+  content: "∧";
+  width: 0;
+  height: 0;
+ position: absolute;
+ top: -38px;
+ left: -20px;
+ font-size: 50px;
+
+  }
+
+@media screen and (max-width:600px){
+  .tryangle-box{
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  
+  .tryangle{
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+  
+  }
+  
+  .tryangle::before{
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 25px 35px  25px;
+  
+  border-color: transparent  transparent #333 transparent;
+  position: absolute;
+  top: -31px;
+  left: 0;
+  transform: translate(-50%, -50%);
+  }
+  
+  .tryangle::after{
+    content: "∧";
+    width: 0;
+    height: 0;
+   position: absolute;
+   top: -33px;
+   left: -16px;
+   font-size: 40px;
+  
+    } 
+
 }
 
 .footer-wrapper__top {
